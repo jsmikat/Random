@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

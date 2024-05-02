@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
@@ -48,10 +60,25 @@
     --ring: 35.5 91.7% 32.9%;
   }
 
-  * {
-    @apply border-border;
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/poppins/Poppins-Regular.ttf) format("truetype");
   }
-  body {
-    @apply bg-background text-foreground;
+  @font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/poppins/Poppins-Italic.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/src/assets/fonts/poppins/Poppins-Bold.ttf) format("truetype");
   }
 }
