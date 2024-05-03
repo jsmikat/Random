@@ -7,7 +7,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center">
         <App />
       </div>
     </ThemeProvider>
